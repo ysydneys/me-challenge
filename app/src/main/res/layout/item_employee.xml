@@ -29,8 +29,6 @@
                 android:id="@+id/thumbNailImage"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 tools:src="@drawable/ic_launcher_foreground"
                 app:layout_constraintHorizontal_bias="0"
@@ -45,8 +43,8 @@
                 android:tint="@{employeeItem.gender.equalsIgnoreCase(`male`) ? @color/colorMale : @color/colorFemale}"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintVertical_bias="0"
-                app:layout_constraintStart_toStartOf="@+id/thumbNailImage"
-                app:layout_constraintTop_toTopOf="@+id/thumbNailImage" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/fullNameText"
