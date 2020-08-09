@@ -4,5 +4,5 @@ import com.ysydneys.meapplication.data.repository.EmployeeRepositoryImpl
 import org.koin.dsl.module
 
 val REPOSITORY_MODULE = module {
-    factory { EmployeeRepositoryImpl(get()) }
+    single { EmployeeRepositoryImpl(get()) }
 }

@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.ysydneys.meapplication.extension.addFragment
 import com.ysydneys.meapplication.extension.replaceToBackStack
 import com.ysydneys.meapplication.ui.BaseFragment
+import com.ysydneys.meapplication.ui.detail.DetailFragment
 import com.ysydneys.meapplication.ui.list.ListFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity(), BaseFragment.FragmentListener {
     }
 
     override fun onEmployeeSelected(selectedEmployeeId: Int) {
-        TODO("Not yet implemented")
+        replaceToBackStack(DetailFragment.newInstance(selectedEmployeeId), R.id.fragmentHolder)
     }
 
     override fun showToastMessage(message: String) {
