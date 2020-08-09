@@ -7,11 +7,11 @@ import com.ysydneys.meapplication.model.Employee
 
 class RemoteEmployeeSource(private val service: EmployeeService) : EmployeeSource {
 
-    override suspend fun getEmployeeList(): ResultWrapper<List<Employee>> {
+    override suspend fun getEmployeeList() : ResultWrapper<List<Employee>> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun getEmployeeDetail(employeeId: Int): ResultWrapper<Employee> {
+    override suspend fun getEmployeeDetail(employeeId: Int) : ResultWrapper<Employee> {
         TODO("Not yet implemented")
     }
 }

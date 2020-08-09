@@ -7,8 +7,8 @@ import retrofit2.http.Path
 interface EmployeeService {
 
     @GET("/employees")
-    suspend fun getEmployeeList(): List<Employee>
+    suspend fun getEmployeeList() : List<Employee>
 
     @GET("/employees/{employee_id}")
-    suspend fun getEmployeeDetail(@Path("employee_id") employeeId: Int): Employee
+    suspend fun getEmployeeDetail(@Path("employee_id") employeeId: Int) : Employee
 }
