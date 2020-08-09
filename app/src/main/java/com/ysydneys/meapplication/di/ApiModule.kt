@@ -21,7 +21,7 @@ val API_MODULE = module {
             .client(get())
             .build()
     }
-    
+
     factory {
         val retrofit: Retrofit = get()
         retrofit.create(EmployeeService::class.java)
