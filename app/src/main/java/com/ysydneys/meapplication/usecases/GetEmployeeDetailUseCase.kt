@@ -6,5 +6,5 @@ import com.ysydneys.meapplication.model.Employee
 
 class GetEmployeeDetailUseCase(private val repository: EmployeeRepository) {
 
-    suspend fun invoke(employeeId: Int) : ResultWrapper<Employee> = repository.getEmployeeDetail()
+    suspend fun invoke(employeeId: Int) : ResultWrapper<Employee> = repository.getEmployeeDetail(employeeId)
 }

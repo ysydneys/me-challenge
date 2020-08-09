@@ -7,5 +7,5 @@ interface EmployeeRepository {
 
     suspend fun getEmployeeList() : ResultWrapper<List<Employee>>
 
-    suspend fun getEmployeeDetail() : ResultWrapper<Employee>
+    suspend fun getEmployeeDetail(employeeId: Int) : ResultWrapper<Employee>
 }
